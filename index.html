@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Certa">
+
+    <title>Certa</title>
+
+    <link rel="icon" href="" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/responsiv-1200.css">
+    <link rel="stylesheet" href="style/responsiv-768.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="/" aria-label="На головну">
+                    <img width="100" height="39" src="image/logo.svg" alt="Certa Logo">
+                </a>
+            </div>
+
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#catalog">Каталог товарів</a></li>
+                    <li class="main-navigation-sub"><a href="#services">Послуги</a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">Каталог товарів</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">Наші проєкти</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">Про нас</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#projects">Наші проєкти</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-box">
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Пошук" aria-label="Поиск">
+                    <button class="search-button" aria-label="Поиск">
+                        <img width="18" height="18" src="image/Search.svg" alt="Search">
+                    </button>
+                </div>
+
+                <div class="cart-container">
+                    <div class="cart-icon">
+                        <span class="cart-icon-image">
+                            <img width="24" height="24" src="image/shopping-cart.svg" alt="Корзина">
+                        </span>
+                        <span class="cart-count">1</span>
+                    </div>
+                </div>
+
+                <div class="header__language">
+                    <p class="header__language-text">UA
+                        <img width="14" height="6" src="image/select.svg" alt="icon">
+                    </p>
+                    <ul class="header__language-menu">
+                        <li><a href="#">En</a></li>
+                        <li><a href="#">Fr</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="header__burger" aria-label="Open menu">
+                <span class="header__burger-lines"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-home">
+
+        <section class="hero global__padding">
+            <div class="wrapper">
+                <div class="hero-content">
+                    <h1><span class="hero-content-text1">виробництво продуктів</span> <span
+                            class="hero-content-text2">для автоматизації</span> <span
+                            class="hero-content-text3">інженерного обладнання</span></h1>
+                    <div class="hero-text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus
+                            volutpat adipiscing luctus</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#callback" class="button-gradient" aria-label="Замовити дзвінок"><span>Замовити
+                                дзвінок</span></a>
+                        <a href="#catalog" class="button-transparent" aria-label="До каталогу">До каталогу
+                            <span class="button-gradient">
+                                <span><img width="18" height="18" src="image/link-arrow-white.svg"
+                                        alt="link arrow"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="image/hero-home.png" width="480" height="600" alt="Продукт Certa"
+                        aria-describedby="product-description">
+                </div>
+            </div>
+            <div class="hero-bg">
+                <video autoplay loop muted>
+                    <source src="image/hero-home.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает тег video.
+                </video>
+            </div>
+        </section>
+
+        <section class="product-categories global__padding">
+            <div class="wrapper">
+                <div class="wrapper-title">
+                    <h2>Категорії товарів</h2>
+                    <div class="sub-text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus
+                            volutpat adipiscing luctus</p>
+                    </div>
+                </div>
+
+                <div class="category-items">
+                    <article class="category-item">
+
+                        <div class="category-text">
+                            <h3>Контролери</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae
+                            </p>
+                        </div>
+                        <div class="category-content-box">
+                            <a href="#controllers">
+                                <img src="image/link-arrow-white.svg" width="18" height="18" alt="link">
+                            </a>
+                            <img src="image/product-categories1.png" width="450" height="249" alt="Контролери">
+                        </div>
+
+                    </article>
+
+                    <article class="category-item">
+
+                        <div class="category-text">
+                            <h3>Панелі управління</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae
+                            </p>
+                        </div>
+                        <div class="category-content-box">
+                            <a href="#controllers">
+                                <img src="image/link-arrow-white.svg" width="18" height="18" alt="link">
+                            </a>
+                            <img src="image/product-categories2.png" width="450" height="249" alt="Панелі управління">
+                        </div>
+
+                    </article>
+
+                    <article class="category-item">
+
+                        <div class="category-text">
+                            <h3>Пристрої введення/виведення</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae
+                            </p>
+                        </div>
+                        <div class="category-content-box">
+                            <a href="#controllers">
+                                <img src="image/link-arrow-white.svg" width="18" height="18" alt="link">
+                            </a>
+                            <img src="image/product-categories3.png" width="450" height="249"
+                                alt="Пристрої введення/виведення">
+                        </div>
+
+                    </article>
+
+                    <article class="category-item">
+
+                        <div class="category-text">
+                            <h3>ШІМ-регулятори</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae
+                            </p>
+                        </div>
+                        <div class="category-content-box">
+                            <a href="#controllers">
+                                <img src="image/link-arrow-white.svg" width="18" height="18" alt="link">
+                            </a>
+                            <img src="image/product-categories4.png" width="450" height="249" alt="ШІМ-регулятори">
+                        </div>
+
+                    </article>
+
+                    <article class="category-item">
+
+                        <div class="category-text">
+                            <h3>Датчики</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae
+                            </p>
+                        </div>
+                        <div class="category-content-box">
+                            <a href="#controllers">
+                                <img src="image/link-arrow-white.svg" width="18" height="18" alt="link">
+                            </a>
+                            <img src="image/product-categories5.png" width="450" height="249" alt="Датчики">
+                        </div>
+
+                    </article>
+
+                    <article class="category-item">
+
+                        <div class="category-text">
+                            <h3>SCADA/HMI програма</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae
+                            </p>
+                        </div>
+                        <div class="category-content-box">
+                            <a href="#controllers">
+                                <img src="image/link-arrow-white.svg" width="18" height="18" alt="link">
+                            </a>
+                            <img src="image/product-categories6.png" width="450" height="249" alt="SCADA/HMI програма">
+                        </div>
+
+                    </article>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="сta-section global__padding">
+            <div class="wrapper">
+                <h2>потрібна допомога у виборі..?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus volutpat
+                    adipiscing luctus</p>
+                <a href="#callback-form" class="button-gradient"><span>Замовити дзвінок</span></a>
+            </div>
+            <div class="сta-bg">
+                <video autoplay loop muted>
+                    <source src="image/cta.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает тег video.
+                </video>
+            </div>
+        </section>
+
+        <section class="services global__padding">
+            <div class="wrapper">
+                <div class="wrapper-title">
+                    <h2>Наші послуги</h2>
+                    <div class="sub-text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus
+                            volutpat adipiscing luctus</p>
+                    </div>
+                </div>
+
+                <div class="services-list">
+                    <article class="service-item">
+                        <img src="image/services-icon1.svg" alt="Автоматизація та моніторинг інженерних систем">
+                        <h3>Автоматизація та моніторинг інженерних систем</h3>
+                        <p>Автоматизація та віддалений моніторинг/налаштування/керування різноманітним устаткуванням</p>
+                        <a href="#service1" class="link-gradient">Детальніше про послугу <span>
+                                <img src="image/link-arrow-red.svg" width="12" height="10" alt="arrow links">
+                            </span></a>
+                    </article>
+
+                    <article class="service-item">
+                        <img src="image/services-icon2.svg" alt="Монтажні та пусконалагоджені роботи">
+                        <h3>Монтажні та пусконалагоджені роботи</h3>
+                        <p>Виконання монтажних та пусконалагоджувальних робіт </p>
+                        <a href="#service1" class="link-gradient">Детальніше про послугу <span>
+                                <img src="image/link-arrow-red.svg" width="12" height="10" alt="arrow links">
+                            </span></a>
+                    </article>
+
+                    <article class="service-item">
+                        <img src="image/services-icon3.svg" alt="Інтеграція автоматики у ваше обладнання">
+                        <h3>Інтеграція автоматики у <br> ваше обладнання</h3>
+                        <p>Виробництво обладнання, яке потребує засобів автоматизації</p>
+                        <a href="#service1" class="link-gradient">Детальніше про послугу <span>
+                                <img src="image/link-arrow-red.svg" width="12" height="10" alt="arrow links">
+                            </span></a>
+                    </article>
+
+                    <article class="service-item">
+                        <img src="image/services-icon4.svg" alt="Розробка програмного забезпечення для автоматизації">
+                        <h3>Розробка програмного <br> забезпечення для автоматизації</h3>
+                        <p>Розробка ПЗ для систем автоматизації та диспетчеризації по технічному завданню замовника</p>
+                        <a href="#service1" class="link-gradient">Детальніше про послугу <span>
+                                <img src="image/link-arrow-red.svg" width="12" height="10" alt="arrow links">
+                            </span></a>
+                    </article>
+
+                    <article class="service-item">
+                        <img src="image/services-icon5.svg" alt="Розробка і виготовлення спеціалізованої електроніки">
+                        <h3>Розробка і виготовлення <br> спеціалізованої електроніки</h3>
+                        <p>Розробка і виготовлення електронних пристроїв відповідно до специфічних вимог замовника</p>
+                        <a href="#service1" class="link-gradient">Детальніше про послугу <span>
+                                <img src="image/link-arrow-red.svg" width="12" height="10" alt="arrow links">
+                            </span></a>
+                    </article>
+                </div>
+
+                <div class="cta-button">
+                    <a href="#callback" class="button-gradient"><span>Замовити дзвінок</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us global__padding">
+            <div class="wrapper">
+                <div class="wrapper-title">
+                    <h2>чому обирають нас</h2>
+                    <div class="sub-text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus
+                            volutpat adipiscing luctus</p>
+                    </div>
+                </div>
+
+                <div class="reasons">
+                    <article class="reason-item">
+                        <div class="reason-item-header">
+                            <img src="image/why-choose-us-icon1.svg" width="48" height="48" alt="Легке впровадження">
+                            <h3>Легке впровадження</h3>
+                        </div>
+                        <p>Продукція сумісна з більшістю сучасних інженерних систем і не потребує складного налаштування
+                        </p>
+                    </article>
+
+                    <article class="reason-item">
+                        <div class="reason-item-header">
+                            <img src="image/why-choose-us-icon2.svg" width="48" height="48" alt="Індивідуальний підхід">
+                            <h3>Індивідуальний підхід</h3>
+                        </div>
+                        <p>Можливість адаптації обладнання та ПЗ відповідно до специфіки об'єкта замовника</p>
+                    </article>
+
+                    <article class="reason-item">
+                        <div class="reason-item-header">
+                            <img src="image/why-choose-us-icon3.svg" width="48" height="48" alt="Технічна підтримка">
+                            <h3>Технічна підтримка</h3>
+                        </div>
+                        <p>Супровід на всіх етапах: від підбору обладнання до післягарантійного обслуговування</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-product global__padding">
+            <div class="wrapper">
+                <div class="my-product-left">
+                    <h2>власний програмний <br> продукт Wheel</h2>
+                    <div class="my-product-text">
+                        <p>Програма Wheel реалізована на основі технології Java і тому сумісна з великою кількістю
+                            апаратних платформ, починаючи від одноплатних компʹютерів і закінчуючи високопродуктивними
+                            серверами. Гнучка архітектура Wheel дозволяє створювати системи диспетчеризації і
+                            візуалізації (SCADA/HMI), що забезпечують виконання всіх необхідних функцій</p>
+                        <small>Ви можете переглянути демонстраційну версію SCADA-системи на базі Wheel, використовуючи
+                            такі
+                            облікові дані:</small>
+                        <ul>
+                            <li>Ім’я: test</li>
+                            <li>Пароль: 123</li>
+                        </ul>
+                        <a href="#catalog" class="button-transparent" aria-label="До каталогу">демонстраційна версія
+                            <span class="button-gradient">
+                                <span><img width="18" height="18" src="image/link-arrow-white.svg"
+                                        alt="link arrow"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-product-right">
+                    <img width="668" height="593" src="image/product-img.png" alt="">
+                </div>
+            </div>
+
+            <div class="my-product-bg">
+                <img src="image/product-bg.jpg" alt="image">
+            </div>
+        </section>
+
+        <section class="solutions global__padding">
+            <div class="wrapper">
+                <div class="wrapper-title">
+                    <h2>наші рішення для різних сфер</h2>
+                    <div class="sub-text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus
+                            volutpat adipiscing luctus</p>
+                    </div>
+                </div>
+
+                <div class="solutions-list">
+                    <article class="solution-item">
+                        <img src="image/solutions1.jpg" width="330" height="300"
+                            alt="Системи вентиляції та кондиціонування">
+                        <h3>Системи вентиляції та кондиціонування</h3>
+                    </article>
+
+                    <article class="solution-item">
+                        <img src="image/solutions2.jpg" width="330" height="300"
+                            alt="Насосні станції та системи водопостачання">
+                        <h3>Насосні станції та системи водопостачання</h3>
+                    </article>
+
+                    <article class="solution-item">
+                        <img src="image/solutions3.jpg" width="330" height="300" alt="Басейни та рекреаційні комплекси">
+                        <h3>Басейни та рекреаційні комплекси</h3>
+                    </article>
+
+                    <article class="solution-item">
+                        <img src="image/solutions4.jpg" width="330" height="300"
+                            alt="Холодильне обладнання та холодопостачання">
+                        <h3>Холодильне обладнання та холодопостачання</h3>
+                    </article>
+
+                    <article class="solution-item">
+                        <img src="image/solutions5.jpg" width="330" height="300"
+                            alt="Індивідуальні теплові пункти (ІТП)">
+                        <h3>Індивідуальні теплові пункти (ІТП)</h3>
+                    </article>
+
+                    <article class="solution-item">
+                        <img src="image/solutions6.jpg" width="330" height="300"
+                            alt="Теплові насоси та кліматичні системи">
+                        <h3>Теплові насоси та кліматичні системи</h3>
+                    </article>
+
+                    <article class="solution-item">
+                        <img src="image/solutions7.jpg" width="330" height="300"
+                            alt="Житлово-комунальне господарство (ЖКГ)">
+                        <h3>Житлово-комунальне господарство (ЖКГ)</h3>
+                    </article>
+
+                    <article class="solution-item">
+                        <img src="image/solutions8.jpg" width="330" height="300"
+                            alt="Енергоменеджмент і облік споживання ресурсів">
+                        <h3>Енергоменеджмент і облік споживання ресурсів</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="client-logos global__padding">
+            <h2>компанії, які нам довіряють</h2>
+            <div class="client-logos-swiper swiper-container">
+                <div class="client-logos-swiper-wrapper swiper-wrapper">
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                    <div class="client-logos-swiper-slide swiper-slide">
+                        <img src="image/client-logos.svg" width="161" height="161" alt="Company 1">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-projects global__padding">
+            <div class="wrapper">
+                <div class="wrapper-title">
+                    <h2>наші останні проєкти/об’єкти</h2>
+                    <div class="sub-text">
+                        <p>Ми — не просто виробники, ми знаємо, як все працює в реальних умовах, на справжніх об'єктах
+                        </p>
+                    </div>
+                </div>
+                <div class="projects-list">
+                    <article class="project-item">
+                        <img src="image/recent-projects.jpg" alt="Назва об'єкту 1">
+                        <div class="project-details">
+                            <div class="project-details-loc">
+                                <span class="project-details-loc-text">Київ</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h3>Назва об'єкту 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Montes ut dui sed nunc facilisis
+                                vitae.</p>
+                            <a href="#service1" class="link-gradient">Дивитись проект<span>
+                                    <img src="image/link-arrow-red.svg" width="12" height="10" alt="arrow links">
+                                </span></a>
+                        </div>
+                    </article>
+
+                    <article class="project-item">
+                        <img src="image/recent-projects.jpg" alt="Назва об'єкту 1">
+                        <div class="project-details">
+                            <div class="project-details-loc">
+                                <span class="project-details-loc-text">Київ</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h3>Назва об'єкту 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Montes ut dui sed nunc facilisis
+                                vitae.</p>
+                            <a href="#service1" class="link-gradient">Дивитись проект<span>
+                                    <img src="image/link-arrow-red.svg" width="12" height="10" alt="arrow links">
+                                </span></a>
+                        </div>
+                    </article>
+
+
+                    <article class="project-item">
+                        <img src="image/recent-projects.jpg" alt="Назва об'єкту 1">
+                        <div class="project-details">
+                            <div class="project-details-loc">
+                                <span class="project-details-loc-text">Київ</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h3>Назва об'єкту 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Montes ut dui sed nunc facilisis
+                                vitae.</p>
+                            <a href="#service1" class="link-gradient">Дивитись проект<span>
+                                    <img src="image/link-arrow-red.svg" width="12" height="10" alt="arrow links">
+                                </span></a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="view-all-button">
+                    <a href="#all-projects" class="button-black">Дивитись всі проекти</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="сta-section global__padding">
+            <div class="wrapper">
+                <h2>Залишились питання?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus volutpat
+                    adipiscing luctus</p>
+                <a href="#callback-form" class="button-gradient"><span>Замовити дзвінок</span></a>
+            </div>
+            <div class="сta-bg">
+                <video autoplay loop muted>
+                    <source src="image/cta.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает тег video.
+                </video>
+            </div>
+        </section>
+
+        <section class="our-mission global__padding">
+            <div class="wrapper">
+                <div class="our-mission-left">
+                    <div class="wrapper-title">
+                        <h2>наша місія</h2>
+                        <div class="sub-text">
+                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus
+                                volutpat adipiscing luctus
+                            </p>
+                        </div>
+                    </div>
+                    <div class="our-mission-img">
+                        <img width="570" height="612" src="image/our-mission.jpg" alt="image">
+                    </div>
+                </div>
+                <div class="our-mission-right">
+                    <blockquote>
+
+                        Lorem ipsum dolor sit amet consectetur. Sit semper massa sagittis adipiscing. Diam tristique
+                        id ipsum ut mauris sed sed. Et sollicitudin nascetur sed nunc aliquet. Quis sed sed donec
+                        vulputate nunc dui nulla est. Dui sagittis et erat consequat. Nec eleifend eget quis non in.
+                        Tempor praesent quis mauris faucibus cras faucibus mattis mi. Erat tempor urna iaculis diam
+                        nunc sem. Euismod tincidunt eget sollicitudin imperdiet sapien aliquet vulputate. Adipiscing
+                        phasellus aliquam volutpat ut id auctor adipiscing non. Neque in id vitae convallis faucibus
+                        imperdiet purus ultrices eu
+
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages global__padding">
+            <div class="wrapper">
+
+                <div class="advantages-content">
+                    <div class="stat">
+                        <div class="advantages-stat">
+                            <span class="js-counter" data-target="80" data-suffix="%" data-duration="2000">0</span>
+                            <span class="advantages-stat-text">наших проєктів</span>
+                        </div>
+                        <div class="advantages-content">
+                            <p>реалізовані <br> за межами україни</p>
+                        </div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="advantages-stat">
+                            <span class="js-counter" data-target="100" data-suffix="+" data-duration="2500">0</span>
+                            <span class="advantages-stat-text">країн світу</span>
+                        </div>
+                        <div class="advantages-content">
+                            <p>використовують наші технології</p>
+                        </div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="advantages-stat">
+                            <span class="js-counter" data-target="70" data-suffix="K+" data-duration="2200">0</span>
+                            <span class="advantages-stat-text">інтегрованих рішень</span>
+                        </div>
+                        <div class="advantages-content">
+                            <p>для різних <br> галузей інженерії</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="advantages-img">
+                <img src="image/advantages.jpg" alt="image">
+            </div>
+        </section>
+
+        <section class="faq global__padding">
+            <div class="wrapper">
+                <div class="wrapper-title">
+                    <h2>FAQ</h2>
+                </div>
+                <div class="faq-content">
+                    <div class="faq-text">
+                        <div class="order__accordion">
+                            <div class="order__accordion-item active">
+                                <div class="order__accordion-header">
+                                    <h3 class="order__accordion-title">Suspendisse egestas turpis consectetur non
+                                        mattis?</h3>
+                                    <span class="order__accordion-arrow">
+                                        <img width="15" height="15" src="image/faq-icon1.svg" alt="arrow">
+                                    </span>
+                                </div>
+                                <div class="order__accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae.
+                                        Lectus volutpat adipiscing luctus ut purus et in ut. Venenatis lacus suspendisse
+                                        ligula phasellus sollicitudin. Neque sed viverra suspendisse etiam nisl
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="order__accordion-item">
+                                <div class="order__accordion-header">
+                                    <h3 class="order__accordion-title">Suspendisse egestas turpis consectetur non
+                                        mattis?</h3>
+                                    <span class="order__accordion-arrow">
+                                        <img width="15" height="15" src="image/faq-icon1.svg" alt="arrow">
+                                    </span>
+                                </div>
+                                <div class="order__accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae.
+                                        Lectus volutpat adipiscing luctus ut purus et in ut. Venenatis lacus suspendisse
+                                        ligula phasellus sollicitudin. Neque sed viverra suspendisse etiam nisl
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="order__accordion-item">
+                                <div class="order__accordion-header">
+                                    <h3 class="order__accordion-title">Suspendisse egestas turpis consectetur non
+                                        mattis?</h3>
+                                    <span class="order__accordion-arrow">
+                                        <img width="15" height="15" src="image/faq-icon1.svg" alt="arrow">
+                                    </span>
+                                </div>
+                                <div class="order__accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae.
+                                        Lectus volutpat adipiscing luctus ut purus et in ut. Venenatis lacus suspendisse
+                                        ligula phasellus sollicitudin. Neque sed viverra suspendisse etiam nisl
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="order__accordion-item">
+                                <div class="order__accordion-header">
+                                    <h3 class="order__accordion-title">Suspendisse egestas turpis consectetur non
+                                        mattis?</h3>
+                                    <span class="order__accordion-arrow">
+                                        <img width="15" height="15" src="image/faq-icon1.svg" alt="arrow">
+                                    </span>
+                                </div>
+                                <div class="order__accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae.
+                                        Lectus volutpat adipiscing luctus ut purus et in ut. Venenatis lacus suspendisse
+                                        ligula phasellus sollicitudin. Neque sed viverra suspendisse etiam nisl
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="order__accordion-item">
+                                <div class="order__accordion-header">
+                                    <h3 class="order__accordion-title">Suspendisse egestas turpis consectetur non
+                                        mattis?</h3>
+                                    <span class="order__accordion-arrow">
+                                        <img width="15" height="15" src="image/faq-icon1.svg" alt="arrow">
+                                    </span>
+                                </div>
+                                <div class="order__accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae.
+                                        Lectus volutpat adipiscing luctus ut purus et in ut. Venenatis lacus suspendisse
+                                        ligula phasellus sollicitudin. Neque sed viverra suspendisse etiam nisl
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="order__accordion-item">
+                                <div class="order__accordion-header">
+                                    <h3 class="order__accordion-title">Suspendisse egestas turpis consectetur non
+                                        mattis?</h3>
+                                    <span class="order__accordion-arrow">
+                                        <img width="15" height="15" src="image/faq-icon1.svg" alt="arrow">
+                                    </span>
+                                </div>
+                                <div class="order__accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae.
+                                        Lectus volutpat adipiscing luctus ut purus et in ut. Venenatis lacus suspendisse
+                                        ligula phasellus sollicitudin. Neque sed viverra suspendisse etiam nisl
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-image">
+                        <img width="570" height="408" src="image/faq.jpg" alt="Image related to FAQ">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts global__padding">
+            <div class="wrapper">
+                <div class="contacts-left">
+                    <div class="wrapper-title">
+                        <h2>КОНТАКТИ</h2>
+                        <div class="sub-text">
+                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus
+                                volutpat adipiscing luctus</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="button-black">
+                                <img width="30" height="30" src="image/icon-email.svg" alt="icon">
+                            </span>
+                            <div class="contact-text">
+                                <p>Email</p>
+                                <a href="mailto:contact@certa.ua">contact@certa.ua</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="button-black">
+                                <img width="30" height="30" src="image/icon-location.svg" alt="icon">
+                            </span>
+                            <div class="contact-text">
+                                <p>Адреса</p>
+                                <a href="mailto:contact@certa.ua">М. Київ, пр. Миру, 4, оф. 302</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="button-black">
+                                <img width="30" height="30" src="image/icon-phone.svg" alt="icon">
+                            </span>
+                            <div class="contact-text">
+                                <p>Телефон</p>
+                                <a href="tel:+380671234567">+38(067) 123-45-67</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-content">
+                    <div class="contact-form">
+                        <form action="/submit" method="POST">
+                            <div class="contact-form-label">
+                                <label for="name">Name*</label>
+                                <input type="text" id="name" name="name" placeholder="name" required>
+                            </div>
+
+                            <div class="contact-form-label">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" placeholder="example@youremail.com"
+                                    required>
+                            </div>
+
+
+                            <div class="contact-form-label">
+                                <label for="phone">Phone*</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456 - 7890" required>
+                            </div>
+
+                            <div class="contact-form-label">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="company">
+                            </div>
+
+                            <div class="contact-form-label contact-form-label-full">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required
+                                    placeholder="Type your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="button-gradient"><span>ВІДПРАВИТИ КОНТАКТИ</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts-bg">
+                <video autoplay loop muted>
+                    <source src="image/contact-section.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает тег video.
+                </video>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="/" aria-label="На головну">
+                        <img width="100" height="39" src="image/logo.svg" alt="Certa Logo">
+                    </a>
+                    <div class="footer-logo-text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus
+                            volutpat adipiscing luctus</p>
+                    </div>
+                </div>
+
+                <nav class="footer-navigation">
+                    <section class="footer-section">
+                        <h3>Ключові розділи</h3>
+                        <ul>
+                            <li><a href="#catalog">Каталог товарів</a></li>
+                            <li class="footer-select">
+                                <button class="footer__accordion-button">Послуги</button>
+                                <ul class="footer-select-sub">
+                                    <li><a href="#files">Файли</a></li>
+                                    <li><a href="#knowledge-base">База знань</a></li>
+                                    <li><a href="#warranty">Гарантії</a></li>
+                                    <li><a href="#blog">Блог</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#projects">Наші проєкти</a></li>
+                            <li><a href="#about">Про нас</a></li>
+                            <li><a href="#partnership">Партнерство</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="footer-section">
+                        <h3>Підтримка</h3>
+                        <ul>
+                            <li><a href="#files">Файли</a></li>
+                            <li><a href="#knowledge-base">База знань</a></li>
+                            <li><a href="#warranty">Гарантії</a></li>
+                            <li><a href="#blog">Блог</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="footer-section">
+                        <h3>Правова інформація</h3>
+                        <ul>
+                            <li><a href="#privacy-policy">Політика конфіденційності</a></li>
+                            <li><a href="#terms-of-use">Договір публічної оферти</a></li>
+                            <li><a href="#delivery">Доставка та оплата</a></li>
+                            <li><a href="#returns">Обмін та повернення</a></li>
+                        </ul>
+                    </section>
+                </nav>
+
+                <div class="footer-contact">
+                    <a href="tel:+380999999999">+38 (099) 999 99 99</a>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                            <img src="image/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <img src="image/linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright by Certa 2025. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Burger Menu -->
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+        <nav class="footer-section">
+            <ul>
+                <li><a href="#catalog">Каталог товарів</a></li>
+                <li class="footer-select">
+                    <button class="footer__accordion-button">Послуги</button>
+                    <ul class="footer-select-sub">
+                        <li><a href="#files">Файли</a></li>
+                        <li><a href="#knowledge-base">База знань</a></li>
+                        <li><a href="#warranty">Гарантії</a></li>
+                        <li><a href="#blog">Блог</a></li>
+                    </ul>
+                </li>
+                <li><a href="#projects">Наші проєкти</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#partnership">Партнерство</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="script/jquery-3.7.0.min.js" defer></script>
+    <script src="script/swiper-bundle.min.js" defer></script>
+    <script src="script/main.js" defer></script>
+
+</body>
+
+</html>
