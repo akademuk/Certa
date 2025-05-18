@@ -136,6 +136,11 @@
   --gradient-5: linear-gradient(0deg, #e0e0e0 0%, #e0e0e0 100%);
 }
 
+video::-webkit-media-controls,
+video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+}
+
 body {
   font-family: var(--font-family-montserrat);
   font-style: normal;
@@ -2044,3 +2049,4 @@ label {
   transform: rotate(-45deg);
   bottom: 0;
 }
+
