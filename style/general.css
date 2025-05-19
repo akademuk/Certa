@@ -170,6 +170,11 @@ body {
   visibility: visible;
 }
 
+.header.header-black {
+  background: var(--color-black);
+  padding-bottom: 50px;
+  position: static;
+}
 
 .body-lock {
   overflow: hidden;
