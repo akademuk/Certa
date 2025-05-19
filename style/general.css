@@ -231,7 +231,7 @@ input {
   box-shadow: 1px 1px 4px 0px rgba(25, 33, 61, 0.20);
   color: var(--color-dark-gray);
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-14);
+  font-size: var(--font-size-16);
   font-weight: var(--font-weight-regular);
   line-height: var(--font-size-20);
 }
