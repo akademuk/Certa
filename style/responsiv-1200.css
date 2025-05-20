@@ -181,4 +181,16 @@
     .header__burger {
         display: flex;
     }
+
+    .article-main-col {
+       grid-template-columns: 1fr;
+    }
+
+    .article-main-img {
+        height: 385px;
+    }
+
+    .breadcrumbs {
+        padding: 0 32px;
+    }
 }

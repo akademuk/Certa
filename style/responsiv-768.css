@@ -278,4 +278,49 @@
     .approach__left {
         gap: 32px;
     }
+
+    .article-main-content {
+        padding: 0 16px 64px 16px;
+    }
+
+    .article-main {
+        padding: 64px 0 0 0;
+    }
+
+     .breadcrumbs {
+        padding: 0;
+    }
+
+    .article-main-content .wrapper {
+        gap: 32px;
+    }
+
+    .breadcrumbs {
+        padding: 0 16px;
+    }
+
+    .article-main-list li {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .article-main-list li span {
+        text-align: left;
+    }
+
+    .article-main-text p {
+        font-size: var(--font-size-14);
+    }
+
+    .article-main-text {
+        padding: 24px 16px;
+    }
+
+    .article-main-content h1 {
+        font-size: var(--font-size-25);
+    }
+
+    .article-main-list li {
+        padding: 16px;
+    }
 }
