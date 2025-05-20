@@ -69,6 +69,10 @@
         font-size: var(--font-size-25);
     }
 
+    .reason-item h3 {
+        font-size: var(--font-size-16);
+    }
+
     .button-gradient span,
     .button-transparent {
         font-size: var(--font-size-18);
@@ -256,5 +260,22 @@
 
     .header .wrapper {
         gap: 8px;
+    }
+
+    .approach__right {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .approach__box {
+        gap: 32px;
+    }
+
+    .approach__left {
+        min-width: 100%;
+    }
+
+    .approach__left {
+        gap: 32px;
     }
 }
