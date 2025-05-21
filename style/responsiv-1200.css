@@ -65,7 +65,7 @@
         display: none;
     }
 
-   
+
     h1 {
         font-size: var(--font-size-40);
     }
@@ -124,7 +124,7 @@
     .project-item {
         width: calc(50% - 15px);
     }
-    
+
     .our-mission .wrapper {
         flex-direction: column;
     }
@@ -183,7 +183,7 @@
     }
 
     .article-main-col {
-       grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .article-main-img {
@@ -192,5 +192,14 @@
 
     .breadcrumbs {
         padding: 0 32px;
+    }
+
+    .section-filter-box {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .hero-smoll {
+        height: auto;
     }
 }

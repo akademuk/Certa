@@ -323,4 +323,23 @@
     .article-main-list li {
         padding: 16px;
     }
+
+    .section-filter .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .section-filter-box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-filter-card {
+        min-width: 256px;
+        flex: 1;
+    }
 }
