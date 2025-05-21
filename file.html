@@ -84,19 +84,13 @@
         <section class="hero hero-smoll global__padding">
             <div class="wrapper">
                 <div class="hero-content">
-                    <h1>база знань</h1>
+                    <h1>файли</h1>
                     <div class="hero-search">
                         <form class="search-form" action="/search" method="get" role="search">
-                            <input 
-                                type="search" 
-                                class="search-input" 
-                                placeholder="Знайти в базі знань…" 
-                                aria-label="Пошук у базі знань"
-                                required
-                            >
+                            <input type="search" class="search-input"
+                                placeholder="Пошук по слову / тегу / назві / артикулу" required>
                             <button type="submit" class="button-gradient" aria-label="Шукати">
-                              <span><img width="22" height="22" src="image/Search.svg"
-                                        alt="link arrow"></span>
+                                <span><img width="22" height="22" src="image/Search.svg" alt="link arrow"></span>
                             </button>
                         </form>
                     </div>
@@ -105,8 +99,7 @@
             <div class="hero-bg">
                 <video autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture
                     disableremoteplayback controlsList="nofullscreen nodownload noremoteplayback"
-                    x-webkit-airplay="deny"
-                    oncontextmenu="return false;">
+                    x-webkit-airplay="deny" oncontextmenu="return false;">
                     <source src="image/new-bg.webm" type="video/webm">
                     Ваш браузер не поддерживает тег video.
                 </video>
@@ -115,132 +108,172 @@
 
         <div class="section-filter global__padding">
             <div class="wrapper">
-                <aside class="sidebar">
-                    <h2>Категорії питань</h2>
+                <aside class="sidebar sidebar-accardions">
+                    <h2>Категорії</h2>
 
-                    <ul>
-                        <li class="active-filter">
-                            <a href="/">Lorem ipsum dolor 
-                                <span>
-                                    <img width="18" height="18" src="image/arrow-sidebar.svg" alt="icon">
-                                </span>
-                            </a>
-                        </li>
+                    <div class="sidebar-accardion">
+                        <div class="sidebar__item">
+                            <button class="sidebar__header">Документація</button>
+                            <div class="sidebar__content">
+                                <ul class="sidebar__content-sub">
+                                    <li><strong>Інструкції</strong>
+                                        <ul class="sidebar__content-sub2">
+                                            <li><a href="/" class="active">Контролери</a></li>
+                                            <li><a href="/">Панелі керування</a></li>
+                                            <li><a href="/">Пристрої введення/виведення</a></li>
+                                            <li><a href="/">Перетворювачі сигналів та інтерфейсів</a></li>
+                                            <li><a href="/">Датчики</a></li>
+                                            <li><a href="/">Сигналізатори рівня</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>Паспорта</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                        <li>
-                            <a href="/">Lorem ipsum dolor 
-                                <span>
-                                    <img width="18" height="18" src="image/arrow-sidebar.svg" alt="icon">
-                                </span>
-                            </a>
-                        </li>
+                        <div class="sidebar__item">
+                            <button class="sidebar__header">Програми</button>
+                            <div class="sidebar__content">
+                                <ul class="sidebar__content-sub">
+                                    <li><strong>Інструкції</strong>
+                                       <ul class="sidebar__content-sub2">
+                                            <li><a href="/">Контролери</a></li>
+                                            <li><a href="/">Панелі керування</a></li>
+                                            <li><a href="/">Пристрої введення/виведення</a></li>
+                                            <li><a href="/">Перетворювачі сигналів та інтерфейсів</a></li>
+                                            <li><a href="/">Датчики</a></li>
+                                            <li><a href="/">Сигналізатори рівня</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>Паспорта</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                        <li>
-                            <a href="/">Lorem ipsum dolor 
-                                <span>
-                                    <img width="18" height="18" src="image/arrow-sidebar.svg" alt="icon">
-                                </span>
-                            </a>
-                        </li>
+                        <div class="sidebar__item">
+                            <button class="sidebar__header">Прайслісти</button>
+                            <div class="sidebar__content">
+                            </div>
+                        </div>
 
-                        <li>
-                            <a href="/">Lorem ipsum dolor 
-                                <span>
-                                    <img width="18" height="18" src="image/arrow-sidebar.svg" alt="icon">
-                                </span>
-                            </a>
-                        </li>
+                        <div class="sidebar__item">
+                            <button class="sidebar__header">Каталог</button>
+                            <div class="sidebar__content">
+                            </div>
+                        </div>
 
-                        <li>
-                            <a href="/">Lorem ipsum dolor 
-                                <span>
-                                    <img width="18" height="18" src="image/arrow-sidebar.svg" alt="icon">
-                                </span>
-                            </a>
-                        </li>
+                        <div class="sidebar__item">
+                            <button class="sidebar__header">ViCS – редактор для контролерів</button>
+                            <div class="sidebar__content">
+                                <ul class="sidebar__content-sub">
+                                    <li><strong>Інструкції</strong>
+                                       <ul class="sidebar__content-sub2">
+                                            <li><a href="/">Контролери</a></li>
+                                            <li><a href="/">Панелі керування</a></li>
+                                            <li><a href="/">Пристрої введення/виведення</a></li>
+                                            <li><a href="/">Перетворювачі сигналів та інтерфейсів</a></li>
+                                            <li><a href="/">Датчики</a></li>
+                                            <li><a href="/">Сигналізатори рівня</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>Паспорта</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                        <li>
-                            <a href="/">Lorem ipsum dolor 
-                                <span>
-                                    <img width="18" height="18" src="image/arrow-sidebar.svg" alt="icon">
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
+                        <div class="sidebar__item">
+                            <button class="sidebar__header">Продукція знята з виробництва</button>
+                            <div class="sidebar__content">
+                            </div>
+                        </div>
+                    </div>
                 </aside>
 
-                <div class="section-filter-box">
+                <div class="section-filter-box section-filter2">
                     <article class="section-filter-card">
-                        <h3>Lorem ipsum dolor sit consectetur?</h3>
+                        <h3>
+                            <img width="32" height="32" src="image/pdf.svg" alt="icon">
+                            Контролер Atom 21
+                        </h3>
 
                         <div class="section-filter-coontent">
-                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus volutpat adipiscing luctus...</p>
-                            <a href="/" class="button-gradient">
-                                <span><img width="18" height="18" src="image/link-arrow-white.svg"
-                                        alt="link arrow"></span>
-                                </a>
+                            <p>завантажити інструкцію у PDF-форматі</p>
+                            <a href="/" download="/" class="button-gradient">
+                                <span><img width="40" height="40" src="image/download.svg" alt="icon"></span>
+                            </a>
                         </div>
                     </article>
 
                     <article class="section-filter-card">
-                        <h3>Lorem ipsum dolor sit consectetur?</h3>
+                        <h3>
+                            <img width="32" height="32" src="image/pdf.svg" alt="icon">
+                            Контролер Mentor 30
+                        </h3>
 
                         <div class="section-filter-coontent">
-                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus volutpat adipiscing luctus...</p>
-                            <a href="/" class="button-gradient">
-                                <span><img width="18" height="18" src="image/link-arrow-white.svg"
-                                        alt="link arrow"></span>
-                                </a>
+                            <p>завантажити інструкцію у PDF-форматі</p>
+                            <a href="/" download="/" class="button-gradient">
+                                <span><img width="40" height="40" src="image/download.svg" alt="icon"></span>
+                            </a>
                         </div>
                     </article>
 
                     <article class="section-filter-card">
-                        <h3>Lorem ipsum dolor sit consectetur?</h3>
+                        <h3>
+                            <img width="32" height="32" src="image/exel.svg" alt="icon">
+                            Контролер Atom 21
+                        </h3>
 
                         <div class="section-filter-coontent">
-                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus volutpat adipiscing luctus...</p>
-                            <a href="/" class="button-gradient">
-                                <span><img width="18" height="18" src="image/link-arrow-white.svg"
-                                        alt="link arrow"></span>
-                                </a>
+                            <p>завантажити файл у Excel-форматі</p>
+                            <a href="/" download="/" class="button-gradient">
+                                <span><img width="40" height="40" src="image/download.svg" alt="icon"></span>
+                            </a>
                         </div>
                     </article>
 
                     <article class="section-filter-card">
-                        <h3>Lorem ipsum dolor sit consectetur?</h3>
+                        <h3>
+                            <img width="32" height="32" src="image/exel.svg" alt="icon">
+                            Контролер Mentor 30
+                        </h3>
 
                         <div class="section-filter-coontent">
-                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus volutpat adipiscing luctus...</p>
-                            <a href="/" class="button-gradient">
-                                <span><img width="18" height="18" src="image/link-arrow-white.svg"
-                                        alt="link arrow"></span>
-                                </a>
+                            <p>завантажити файл у Excel-форматі</p>
+                            <a href="/" download="/" class="button-gradient">
+                                <span><img width="40" height="40" src="image/download.svg" alt="icon"></span>
+                            </a>
                         </div>
                     </article>
 
                     <article class="section-filter-card">
-                        <h3>Lorem ipsum dolor sit consectetur?</h3>
+                        <h3>
+                            <img width="32" height="32" src="image/zip.svg" alt="icon">
+                            Контролер Atom 21
+                        </h3>
 
                         <div class="section-filter-coontent">
-                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus volutpat adipiscing luctus...</p>
-                            <a href="/" class="button-gradient">
-                                <span><img width="18" height="18" src="image/link-arrow-white.svg"
-                                        alt="link arrow"></span>
-                                </a>
+                            <p>завантажити файл у ZIP-форматі</p>
+                            <a href="/" download="/" class="button-gradient">
+                                <span><img width="40" height="40" src="image/download.svg" alt="icon"></span>
+                            </a>
                         </div>
                     </article>
 
                     <article class="section-filter-card">
-                        <h3>Lorem ipsum dolor sit consectetur?</h3>
+                        <h3>
+                            <img width="32" height="32" src="image/zip.svg" alt="icon">
+                            Контролер Mentor 30
+                        </h3>
 
                         <div class="section-filter-coontent">
-                            <p>Lorem ipsum dolor sit amet consectetur. Montes ut dui sed nunc facilisis vitae. Lectus volutpat adipiscing luctus...</p>
-                            <a href="/" class="button-gradient">
-                                <span><img width="18" height="18" src="image/link-arrow-white.svg"
-                                        alt="link arrow"></span>
-                                </a>
+                            <p>завантажити файл у ZIP-форматі</p>
+                            <a href="/" download="/" class="button-gradient">
+                                <span><img width="40" height="40" src="image/download.svg" alt="icon"></span>
+                            </a>
                         </div>
                     </article>
+
                 </div>
             </div>
         </div>
@@ -256,8 +289,7 @@
             <div class="сta-bg">
                 <video autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture
                     disableremoteplayback controlsList="nofullscreen nodownload noremoteplayback"
-                    x-webkit-airplay="deny"
-                    oncontextmenu="return false;">
+                    x-webkit-airplay="deny" oncontextmenu="return false;">
                     <source src="image/cta.mp4" type="video/mp4">
                     Ваш браузер не поддерживает тег video.
                 </video>

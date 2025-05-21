@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initCountersAnimation();
   initFooterAccordion();
   initBurgerMenu();
+  initSidebarAccordion();
 });
 
 /**
@@ -165,43 +166,62 @@ function initBurgerMenu() {
   });
 }
 
+function initDeferredVideoPlayback() {
+  const videos = document.querySelectorAll("video");
+  if (!videos.length) return;
 
+  const firstVideo = videos[0];
+  firstVideo.preload = "auto";
+  firstVideo.muted = true;
+  firstVideo.playsInline = true;
+  firstVideo.setAttribute("playsinline", "");
+  firstVideo.setAttribute("webkit-playsinline", "");
+  firstVideo.load();
+  firstVideo
+    .play()
+    .catch((err) =>
+      console.warn("Не удалось запустить первый видео-слайд:", err)
+    );
 
-  /**
-   * Отложенный автозапуск всех видео на странице,
-   * при этом первый видеослайд загружается и стартует сразу, чтобы не было «пустоты».
-   */
-  function initDeferredVideoPlayback() {
-    const videos = document.querySelectorAll('video');
-    if (!videos.length) return;
+  const deferred = Array.from(videos).slice(1);
+  deferred.forEach((video) => {
+    video.preload = "none";
+  });
 
-    // Первый видеослайд: сразу подгружаем и запускаем
-    const firstVideo = videos[0];
-    firstVideo.preload = 'auto';
-    firstVideo.muted = true;
-    firstVideo.playsInline = true;
-    firstVideo.setAttribute('playsinline', '');
-    firstVideo.setAttribute('webkit-playsinline', '');
-    firstVideo.load();    
-    firstVideo.play().catch(err => console.warn('Не удалось запустить первый видео-слайд:', err));
-
-    // Остальные видео — не предзагружаем до полной загрузки страницы
-    const deferred = Array.from(videos).slice(1);
-    deferred.forEach(video => {
-      video.preload = 'none';
+  window.addEventListener("load", () => {
+    deferred.forEach((video) => {
+      video.preload = "auto";
+      video.muted = true;
+      video.playsInline = true;
+      video.setAttribute("playsinline", "");
+      video.setAttribute("webkit-playsinline", "");
+      video.load();
+      video.play().catch((err) => console.warn("Video playback failed:", err));
     });
+  });
+}
 
-    // После полной загрузки страницы «рассыпаем» буферизацию и автозапуск
-    window.addEventListener('load', () => {
-      deferred.forEach(video => {
-        video.preload = 'auto';
-        video.muted = true;
-        video.playsInline = true;
-        video.setAttribute('playsinline', '');
-        video.setAttribute('webkit-playsinline', '');
-        video.load();
-        video.play().catch(err => console.warn('Video playback failed:', err));
-      });
+function initSidebarAccordion() {
+  const sidebar = document.querySelector(".sidebar");
+  if (!sidebar) return;
+  const items = sidebar.querySelectorAll(".sidebar__item");
+  if (!items.length) return;
+
+  items.forEach((item) => {
+    const header = item.querySelector(".sidebar__header");
+    const content = item.querySelector(".sidebar__content");
+    if (!header || !content) return;
+
+    const hasSubmenu =
+      content.children.length > 0 && content.textContent.trim() !== "";
+
+    if (!hasSubmenu) {
+      header.classList.add("sidebar__header--disabled");
+      return;
+    }
+
+    header.addEventListener("click", () => {
+      item.classList.toggle("active");
     });
-  }
-
+  });
+}

@@ -2570,6 +2570,9 @@ label {
 .section-filter-card h3 {
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-medium);
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .section-filter-coontent {
@@ -2599,4 +2602,124 @@ label {
 
 .section-filter-coontent .button-gradient span {
   display: flex;
+}
+
+
+
+
+
+
+
+.sidebar__header {
+  position: relative;
+  cursor: pointer;
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar__header::after {
+  content: "";
+  background: url(../image/accardion-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 7px;
+  transition: all 0.4s;
+}
+.sidebar__item.active .sidebar__header::after {
+  transform: rotate(180deg);
+}
+.sidebar__content {
+  display: none;
+}
+.sidebar__item.active .sidebar__content {
+  display: block;
+}
+
+.sidebar__header--disabled::after {
+  display: none;
+}
+
+.sidebar-accardion{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar__item {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--color-dark-gray);
+}
+
+.sidebar__header {
+  color: var(--color-black);
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-regular);
+}
+
+.sidebar-accardions {
+  width: 450px;
+}
+
+.sidebar__item.active {
+  border-radius: 5px;
+  background: linear-gradient(0deg, #E0E0E0 0%, #E0E0E0 100%), #000;
+  border-bottom: none;
+}
+
+.sidebar__item .sidebar__content ul {
+  padding: 10px 0 0 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar__item .sidebar__content-sub li {
+ padding: 0;
+  border: none;
+  color: var(--color-black);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-regular);
+}
+
+.sidebar__item .sidebar__content-sub strong {
+  color: var(--color-black);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-semibold);
+}
+
+.sidebar__item .sidebar__content-sub2 {
+  padding-left: 20px;
+}
+
+.sidebar__item .sidebar__content-sub2 li {
+  padding: 0;
+}
+
+.sidebar__item .sidebar__content .sidebar__content-sub2 {
+  gap: 5px;
+}
+
+.sidebar__content-sub2 li a.active {
+  text-decoration: underline;
+  font-weight: var(--font-weight-semibold);
+}
+
+.section-filter2 .section-filter-coontent {
+  align-items: flex-end;
+}
+
+.section-filter2 .section-filter-coontent p {
+  max-width: 100%;
+  width: 100%;
+  text-align: right;
+  color: #000;
+  font-size: var(--font-size-12);
+  font-weight: var(--font-weight-regular);
 }
