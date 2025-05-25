@@ -202,4 +202,21 @@
     .hero-smoll {
         height: auto;
     }
+
+    .arto-woocommerce-shop .section-filter .shop-section .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .arto-single-product .arto-product-card .wrapper {
+        flex-direction: column;
+    }
+
+    .arto-single-product .woocommerce-product-gallery {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .arto-single-product .related .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
