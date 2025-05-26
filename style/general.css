@@ -173,6 +173,8 @@ body {
 .header.header-black {
   background: var(--color-black);
   padding-bottom: 50px;
+  padding-top: 50px;
+  height: 139px;
   position: static;
 }
 
@@ -2794,6 +2796,10 @@ label {
   padding-right: 60px;
 }
 
+.arto-woocommerce-shop .woocommerce-products-header .admin-bar-search form .adminbar-input:focus::placeholder {
+  color: transparent;
+}
+
 .arto-woocommerce-shop .woocommerce-products-header .admin-bar-search form .adminbar-button {
   position: absolute;
   right: -1px;
@@ -2910,22 +2916,19 @@ label {
   font-weight: var(--font-weight-semibold);
 }
 
+.arto-woocommerce-shop .product__box-detail .woocommerce_loop_add-detail img {
+  transition: all 0.4s;
+}
+
+.arto-woocommerce-shop .product__box-detail .woocommerce_loop_add-detail:hover img{
+  transform: translateX(10px);
+}
+
 .arto-woocommerce-shop .add_to_cart_button {
   display: flex;
   width: 62px;
   height: 55px;
   padding: 16px 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background: url(../image/shopping-cart.svg), linear-gradient(101deg, #F00 -33.77%, #900 120.46%);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  border-radius: 5px;
-  box-shadow: none;
-  cursor: pointer;
-  font-size: 0;
 }
 
 .arto-woocommerce-shop .sidebar__header {
@@ -3133,7 +3136,7 @@ label {
   padding: 0 0 0 20px;
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-regular);
-  margin: 0;
+  margin: 0 0 16px 0;
 }
 
 .arto-single-product .product_meta {
@@ -3202,4 +3205,67 @@ label {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+
+.search-container {
+  min-width: 74px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+
+#search {
+position: absolute;
+  right: 37px;
+transition: all 0.3s;
+}
+
+
+#search::placeholder {
+  transition: color 0.3s ease;
+}
+
+
+.search-container:focus-within #search {
+  position: absolute;
+  top: 0;
+  width: 120px;                
+  background: var(--color-white);        
+  color: var(--color-black);     
+  z-index: 1;         
+  padding-left: 8px;         
+}
+
+.search-container:focus-within #search::placeholder {
+  color: transparent;
+}
+
+.search-button {
+  position: relative;
+  z-index: 2;
+    cursor: pointer;  
+}
+
+
+.woocommerce-badge {
+  display: inline-flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: linear-gradient(101deg, #F00 -33.77%, #900 120.46%);
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-family-roadradio);
+  font-size: var(--font-size-18);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.type-product {
+  position: relative;
 }
