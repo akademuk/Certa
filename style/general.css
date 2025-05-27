@@ -2864,6 +2864,16 @@ label {
   margin-bottom: 15px;
 }
 
+.arto-woocommerce-shop .products .product .price {
+  display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
 .arto-woocommerce-shop .sidebar {
   min-width: 330px;
   position: sticky;
@@ -2888,8 +2898,23 @@ label {
   -webkit-text-fill-color: transparent;
   font-size: var(--font-size-20);
   font-weight: var(--font-weight-bold);
-  margin-bottom: 30px;
   display: block;
+}
+
+.arto-woocommerce-shop del {
+   font-size: var(--font-size-18);
+  color: var(--color-dark-gray); 
+}
+
+.arto-woocommerce-shop del .woocommerce-Price-amount {
+  font-size: var(--font-size-16);
+  color: var(--color-dark-gray);
+  background: none;
+  -webkit-text-fill-color:var(--color-dark-gray);
+}
+
+.arto-woocommerce-shop ins  {
+  text-decoration: none;
 }
 
 .arto-woocommerce-shop .product__box-detail {
