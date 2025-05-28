@@ -152,6 +152,23 @@ body {
   padding: 0;
 }
 
+p, ul, ol, h1, h2, h3, h4, h5, h6, img {
+  margin: 0 0 16px 0;
+  color: var(--black-color);
+}
+
+.cart-icon-image img {
+  margin: 0;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+button img {
+  margin: 0;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -197,6 +214,14 @@ h1 {
   margin: 0 0 25px 0;
 }
 
+.wrapper-title h2 {
+  margin: 0;
+}
+
+.sub-text p {
+  margin: 0;
+}
+
 h2 {
   color: var(--color-black);
   font-family: var(--font-family-roadradio);
@@ -219,6 +244,10 @@ p {
 a {
   text-decoration: none;
   color: var(--black-color);
+}
+
+a img {
+  margin: 0;
 }
 
 .mobile-menu {
@@ -452,6 +481,7 @@ label {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  margin: 0;
 }
 
 .main-navigation ul {
@@ -459,6 +489,7 @@ label {
   align-items: center;
   gap: 40px;
   list-style: none;
+  margin: 0;
 }
 
 .main-navigation ul li a {
@@ -594,6 +625,7 @@ label {
 
 .header__language .header__language-text img {
   transition: all 0.4s;
+  margin: 0;
 }
 
 .header__language:hover .header__language-text img {
@@ -609,12 +641,13 @@ label {
   cursor: pointer;
   transition: all 0.4s;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .header__language-menu {
   position: absolute;
   top: 35px;
-  width: 100px;
+  width: max-content;
   border-radius: 3px;
   background: var(--color-white);
   padding: 10px;
@@ -790,6 +823,7 @@ label {
   line-height: 122.034%;
   max-width: 715px;
   width: 100%;
+  margin: 0;
 }
 
 .hero-text {
@@ -831,6 +865,7 @@ label {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  margin: 0;
 }
 
 
@@ -880,6 +915,7 @@ label {
 .category-content-box img {
   object-fit: contain;
   object-position: right;
+  margin: 0;
 }
 
 .category-item:nth-child(2n),
@@ -918,6 +954,7 @@ label {
 .category-text h3 {
   color: var(--color-white);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .category-text p {
@@ -926,6 +963,7 @@ label {
   font-weight: var(--font-weight-regular);
   max-width: 330px;
   width: 100%;
+  margin: 0;
 }
 
 .category-item:nth-child(2n) h3,
@@ -1123,6 +1161,7 @@ label {
   height: 48px;
   flex-shrink: 0;
   aspect-ratio: 1/1;
+  margin: 0;
 }
 
 .reason-item-header {
@@ -1134,11 +1173,13 @@ label {
 .reason-item h3 {
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-medium);
+  margin: 0;
 }
 
 .reason-item p {
   font-size: var(--font-size-14);
   font-weight: var(--font-size-14);
+  margin: 0;
 }
 
 /* My Product */
@@ -1223,6 +1264,7 @@ label {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  margin: 0;
 }
 
 .my-product-bg {
@@ -1266,6 +1308,7 @@ label {
 .our-mission-left .our-mission-img img {
   width: 100%;
   height: 100%;
+  margin: 0;
   object-fit: cover;
 }
 
@@ -1380,6 +1423,7 @@ label {
   font-weight: var(--font-weight-regular);
   line-height: 110%;
   text-transform: uppercase;
+  margin: 0;
 }
 
 /* Solutions */
@@ -1476,6 +1520,7 @@ label {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  margin: 0;
 }
 
 /* Recent Projects */
@@ -1507,6 +1552,7 @@ label {
   width: 100%;
   height: 310px;
   object-fit: cover;
+  margin: 0;
 }
 
 .project-details {
@@ -1627,6 +1673,7 @@ label {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0;
 }
 
 .order__accordion-header {
@@ -1642,6 +1689,7 @@ label {
   color: var(--color-dark-gray-alt);
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-medium);
+  margin: 0;
 }
 
 .order__accordion-item .order__accordion-arrow {
@@ -1662,6 +1710,7 @@ label {
   color: var(--color-dark-gray-alt);
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-regular);
+  margin: 0;
 }
 
 .faq-text {
@@ -1796,6 +1845,11 @@ label {
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-regular);
   line-height: 20px;
+  margin: 0;
+}
+
+.button-black img {
+  margin: 0;
 }
 
 .contact-text a {
@@ -1852,6 +1906,7 @@ label {
 .footer-logo p {
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-regular);
+  margin: 0;
 }
 
 .footer-section {
@@ -1865,6 +1920,8 @@ label {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-section h3 {
@@ -1936,6 +1993,7 @@ label {
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-regular);
   line-height: 21px;
+  margin: 0;
 }
 
 .footer-select {
@@ -2072,6 +2130,11 @@ label {
   align-items: center;
   gap: 18px;
   list-style: none;
+  margin: 0;
+}
+
+.related h2 {
+  margin: 0;
 }
 
 .view-all-button ul li a.active {
@@ -2165,6 +2228,7 @@ label {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0;
 }
 
 .approach__left-text p {
@@ -2172,6 +2236,7 @@ label {
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-regular);
   line-height: 125%;
+  margin: 0;
 }
 
 .approach__left ul {
@@ -2312,6 +2377,7 @@ label {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0;
 }
 
 .article-main-col {
@@ -2380,28 +2446,6 @@ label {
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.article-main-content-text > *{
-  margin-bottom: 16px;
-      color: var(--color-dark-gray);
-    font-size: var(--font-size-18);
-    line-height: 125%;
-    width: 100%;
-    display: block;
-}
-
-.article-main-content-text > *:last-child {
-  margin-bottom: 0;
-}
-
-.article-main-content .article-main-content-text h2, h3 {
-  font-weight: var(--font-weight-semibold);
-}
-
-.article-main-content-text ul,
-.article-main-content-text ol {
-  padding-left: 20px;
-}
-
 .article-main-content-text img {
   max-height: 500px;
   width: 100%;
@@ -2419,6 +2463,7 @@ label {
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-regular);
   line-height: 125%;
+  margin: 0;
 }
 
 .article-main-gallery>.article-main-item:nth-child(1) {
@@ -2442,6 +2487,7 @@ label {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0;
 }
 
 .article-main-gallery>.article-main-item:only-child {
@@ -2605,6 +2651,7 @@ label {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-bottom: 0;
 }
 
 .section-filter-coontent {
@@ -2621,6 +2668,7 @@ label {
   color: var(--color-black);
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-regular);
+  margin: 0;
 }
 
 .section-filter-coontent a {
