@@ -2384,9 +2384,17 @@ label {
   margin-bottom: 16px;
       color: var(--color-dark-gray);
     font-size: var(--font-size-18);
-    font-weight: var(--font-weight-regular);
     line-height: 125%;
     width: 100%;
+    display: block;
+}
+
+.article-main-content-text > *:last-child {
+  margin-bottom: 0;
+}
+
+.article-main-content .article-main-content-text h2, h3 {
+  font-weight: var(--font-weight-semibold);
 }
 
 .article-main-content-text ul,
