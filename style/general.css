@@ -2380,6 +2380,26 @@ label {
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.article-main-content-text > *{
+  margin-bottom: 16px;
+      color: var(--color-dark-gray);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-regular);
+    line-height: 125%;
+    width: 100%;
+}
+
+.article-main-content-text ul,
+.article-main-content-text ol {
+  padding-left: 20px;
+}
+
+.article-main-content-text img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .article-main-text h2 {
   color: var(--color-black);
   font-size: var(--font-size-20);
@@ -3096,6 +3116,7 @@ label {
   flex-direction: row-reverse;
   justify-content: flex-end;
   gap: 30px;
+  margin-bottom: 25px;
 }
 
 .arto-single-product .summary .amount {
@@ -3132,6 +3153,7 @@ label {
   flex-direction: column;
   gap: 15px;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .arto-single-product .tab-list .tab {
@@ -3141,6 +3163,8 @@ label {
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-regular);
   cursor: pointer;
+  flex: 1;
+  text-align: center;
 }
 
 .arto-single-product .tab-list .tab.active {

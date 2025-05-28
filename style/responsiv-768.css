@@ -396,4 +396,8 @@
     .arto-woocommerce-shop .woocommerce-Price-amount {
         margin-bottom: 16px;
     }
+
+    .article-main-content-text img {
+        max-height: 300px;
+    }
 }
